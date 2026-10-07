@@ -60,7 +60,7 @@ for i in $(seq 1 30); do
   sleep 2
 done
 
-docker run -t -d -p 8080:8080 --name todorunning --network todonet \
+docker run -t -d -p 8081:8080 --name todorunning --network todonet \
   -e "ConnectionStrings__TodoDb=Server=todoappdb;Port=3306;Database=todo_db;User ID=todo_usr;Password=letmeinplz" \
   todoapp
 
